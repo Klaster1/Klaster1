@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Ilya Borisov's CV</title>
+		<style>
+			body {
+				font-family: sans-serif;
+				margin: 1cm;
+			}
+			dt {
+				font-weight: bolder;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>About me</h1>
+		<dl>
+			<dt>My name</dt>
+			<dd>Ilya Borisov</dd>
+			<dt>How to contact me</dt>
+			<dd>
+				<a href="mailto:klaster1@gmail.com">klaster1@gmail.com</a> (preferred
+				option),
+				<a href="https://www.linkedin.com/in/ilya-borisov-ba6855234/"
+					>https://www.linkedin.com/in/ilya-borisov-ba6855234/</a
+				>
+			</dd>
+			<dt>Positions I'm open for</dt>
+			<dd>Frontend developer</dd>
+			<dt>Technologies I have production experience with</dt>
+			<dd>
+				Angular.js, Angular, JavaScript, TypeScript, NgRX, RxJS, SASS, Node.js,
+				Jasmine, TestCafe, Karma, WebPack, AgGrid, Chart.js, Angular Material,
+				web sockets, STOMP, Apache Cordova, TeamCity, Jenkins
+			</dd>
+			<dt>Other technologies I'm open working with</dt>
+			<dd>
+				Angular, React, Vue, TypeScript; <i>modern</i> frontend tools in general
+			</dd>
+			<dt>Languages</dt>
+			<dd>Russian (native), English (quite fluent)</dd>
+			<dt>Currently I reside in</dt>
+			<dd>Russian Federation, Saint Petersburg</dd>
+			<dt>Open for relocation</dt>
+			<dd><em>Yes</em>. I have no active visas.</dd>
+			<dt>Higher education</dt>
+			<dd>Some, no diploma though</dd>
+			<dt>My strong points</dt>
+			<dd>
+				Attention to details, autonomity, up to date knowledge, open to learning
+				new things, don't hesitate to give feedback and open to receive it
+			</dd>
+		</dl>
+		<h1>Experience</h1>
+		<article>
+			<h2>GridGain (2017 till now) - Frontend developer</h2>
+			<h3>
+				<a href="https://portal.gridgain.com" target="_blank"
+					>GridGain Nebula</a
+				>
+			</h3>
+			<p>
+				<a href="https://www.gridgain.com">GridGain</a> SaaS, allows to
+				provision, manage and monitor GridGain and Apache Ignite clusters.
+			</p>
+			<h4>Highlights</h4>
+			<ul>
+				<li>
+					Architected the Angular application from scratch, maintained and grew
+					it ever since. New developers did not have much trouble joining the
+					project.
+				</li>
+				<li>
+					Designed and implemented a framework for highly customizeable
+					monitoring dashboards a-la Grafana. The framework decouples dashboard
+					management and individual widgets, making it easy to add new widgets
+					using well-defined interfaces. I authored several such widgets, which
+					involved charting (Chart.js), grids (AgGrid) and real-time data
+					sources.
+				</li>
+				<li>
+					Implemented a networking layer for the frontend app to communicate
+					with a GridGain cluster over a custom RPC protocol based on WebSockets
+					and <a href="https://stomp.github.io">STOMP</a>.
+				</li>
+				<li>
+					Proposed a generic way to monitor and handle long running cluster
+					operations, which was implemented later by the backend team. I try to
+					get insight into every part of the project I'm working on, even if my
+					expterise lies elsewhere.
+				</li>
+				<li>
+					Ensured test coverage stayed at high level, both for unit (Jasmine)
+					and E2E (TestCafe) tests. Authored lots of tests myself.
+				</li>
+				<li>
+					Implemented a Node.js-based tool to mock complex backend
+					infrastructure, the tool was used for rapid UI development and in E2E
+					tests via a TestCafe adapter. This required for me to learn low-level
+					WebSocket and STOMP details. The tool exposes an easy to use public
+					API so other developers don't have to understand all the low-level
+					details.
+				</li>
+				<li>
+					Delivered features on time as a part of cross-functional team.
+					Participated in design of most of the project aspects. Sometimes, I
+					had to manage the frontend team, which included transforming vague
+					feature descriptions from higher ups into concrete Jira tasks and
+					epics, and planning the execution of those.
+				</li>
+				<li>
+					Did lots of code reviews. During reviews, I prefer to inspect if the
+					implementation matches the requirements, how well the code is
+					designed, the ease of supporting it later, how comprehensive the code
+					coverage is; I don't care about minutae like formatting, this should
+					be handled by automatic code formatting, which I also introduced to
+					the project (Prettier). My collegues highly regard code reviews I do.
+				</li>
+				<li>
+					Due to complex nature of data, most of features used a different mix
+					of REST/STOMP/RPC, this had to be factored into all steps the of
+					development process - what are UI limitations, how to present the data
+					better, what are available tools, how to structure backend endpoints -
+					I took a very active role in all of these activities.
+				</li>
+				<li>
+					As a part of the team, participated in process adjustments, quite a
+					few of my suggestions solved various pain points.
+				</li>
+			</ul>
+			<h3>Apache Ignite Control Center</h3>
+			<p>
+				A previous generation of Apache Ignite and GridGain monitoring and
+				management solution, superseded by GridGain nebula.
+			</p>
+			<h4>Highlights:</h4>
+			<ul>
+				<li>
+					When I joined the project (written in Angular.js), it had a structure
+					that did not scale and was hard to maintain. To address this, I've
+					re-architected it to use modern approaches like components, introduced
+					E2E testing, RxJS for real time data and helped team mates to learn
+					these new tools and approaches.
+				</li>
+				<li>
+					The project was open-sourced under the Apache Software Foundation. I
+					am an ASF contributor.
+				</li>
+			</ul>
+		</article>
+		<article>
+			<h2>Saritasa (2013-2017) - Frontend developer</h2>
+			<p>
+				A small consulting shop with offices in USA, Russsia and Vietnam. I
+				learned a lot here.
+			</p>
+			<h4>Highlights</h4>
+			<ul>
+				<li>
+					My last project at Saritasa was a rewrite of a trading app UI from
+					Java (desktop) to web (Angular.js) and mobile (Angular.js, Ionic,
+					Apache Cordova). I've architected the Angular.js app, learning along
+					the way how to work with real time data, design very customizeable
+					UIs, share the same codebase in web and mobile apps, optimize the
+					performance (Chrome Web Inspector CPU and memory profilers were the
+					go-to tools). These lessons turned out super-usefulful for later work
+					in GridGain.
+				</li>
+				<li>
+					Overall, lots of small to medium size projects in Angular.js, web and
+					mobile (Apache Cordova).
+				</li>
+			</ul>
+		</article>
+		<h1>Other</h1>
+		<ul>
+			<li>
+				For code samples, check out my pet project at
+				<a href="https://github.com/Klaster1/timer-5" target="_blank"
+					>https://github.com/Klaster1/timer-5</a
+				>
+			</li>
+			<li>
+				I'm also active on StackOverflow -
+				<a href="https://stackoverflow.com/users/333777" target="_blank"
+					>https://stackoverflow.com/users/333777</a
+				>
+			</li>
+			<li>
+				I strive to keep my knowledge up to date by reading various JS and
+				frontend developerment newsletters and blogs
+			</li>
+		</ul>
+	</body>
+</html>
